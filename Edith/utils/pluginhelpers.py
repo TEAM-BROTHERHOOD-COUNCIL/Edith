@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 ABISHNOI
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,11 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
-
-# ""DEAR PRO PEOPLE,  DON'T REMOVE & CHANGE THIS LINE
-# TG :- @Abishnoi1M
-#     MY ALL BOTS :- Abishnoi_bots
-#     GITHUB :- KingAbishnoi ""
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import asyncio
 import math
@@ -42,8 +41,8 @@ from pyrogram import Client
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Chat, Message, User
 
-from Exon import OWNER_ID, SUPPORT_CHAT, pgram
-from Exon.utils.errors import split_limits
+from Edith import OWNER_ID, SUPPORT_CHAT, pgram
+from Edith.utils.errors import split_limits
 
 
 def get_user(message: Message, text: str) -> [int, str, None]:
