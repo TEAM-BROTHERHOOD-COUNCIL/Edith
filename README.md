@@ -10,7 +10,7 @@
 </h2>
 
 
-<h1 align="center"><b> EDITH   𝖱𝖮𝖡𝖮𝖳  ❗️</b></h1> 
+<h1 align="center"><b> 😈 EDITH   𝖱𝖮𝖡𝖮𝖳 😈 </b></h1> 
 
 ##  FOLLOW US ON [TELEGRAM](https://t.me/THE_BROTHERHOOD_COUNCIL) 
 
