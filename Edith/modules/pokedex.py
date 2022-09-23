@@ -1,6 +1,6 @@
 from pyrogram import filters
 
-from Exon import pgram
+from Edith import pgram
 
 
 @pgram.on_message(filters.command("pokedex"))
