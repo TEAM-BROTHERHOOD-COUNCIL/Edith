@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import collections
 import importlib
@@ -28,8 +32,8 @@ import importlib
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 
-from Exon import dispatcher, telethn
-from Exon.__main__ import (
+from Edith import dispatcher, telethn
+from Edith.__main__ import (
     CHAT_SETTINGS,
     DATA_EXPORT,
     DATA_IMPORT,
@@ -40,7 +44,7 @@ from Exon.__main__ import (
     USER_INFO,
     USER_SETTINGS,
 )
-from Exon.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from Edith.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 
 
 @dev_plus
