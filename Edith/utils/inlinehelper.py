@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 ABISHNOI
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,10 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
-# ""DEAR PRO PEOPLE,  DON'T REMOVE & CHANGE THIS LINE
-# TG :- @Abishnoi1M
-#     MY ALL BOTS :- Abishnoi_bots
-#     GITHUB :- KingAbishnoi ""
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import json
 import socket
@@ -46,13 +46,13 @@ from pyrogram.types import (
 )
 from search_engine_parser import GoogleSearch
 
-from Exon import BOT_USERNAME, OWNER_ID
-from Exon import OWNER_USERNAME as AK_BOSS
-from Exon import arq, pgram
-from Exon.utils.pluginhelpers import convert_seconds_to_minutes as time_convert
-from Exon.utils.pluginhelpers import fetch
+from Edith import BOT_USERNAME, OWNER_ID
+from Edith import OWNER_USERNAME as AK_BOSS
+from Edith import arq, pgram
+from Edith.utils.pluginhelpers import convert_seconds_to_minutes as time_convert
+from Edith.utils.pluginhelpers import fetch
 
-SUDOERS = OWNER_ID
+SUDOUERS = OWNER_ID
 app = pgram
 
 
