@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import html
 import json
@@ -31,12 +35,12 @@ from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import mention_html
 
-from Exon import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
-from Exon.modules.helper_funcs.chat_status import dev_plus, sudo_plus, whitelist_plus
-from Exon.modules.helper_funcs.extraction import extract_user
-from Exon.modules.log_channel import gloggable
+from Edith import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
+from Edith.modules.helper_funcs.chat_status import dev_plus, sudo_plus, whitelist_plus
+from Edith.modules.helper_funcs.extraction import extract_user
+from Edith.modules.log_channel import gloggable
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "Exon/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "Edith/elevated_users.json")
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
@@ -197,7 +201,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        f"{rt}\nsᴜᴄᴄᴇssғᴜʟʟʏ ᴘʀᴏᴍᴏᴛᴇᴅ {user_member.first_name} ᴛᴏ ᴀ ʀᴀɴᴋᴇᴅ EXON!"
+        f"{rt}\nsᴜᴄᴄᴇssғᴜʟʟʏ ᴘʀᴏᴍᴏᴛᴇᴅ {user_member.first_name} ᴛᴏ ᴀ ʀᴀɴᴋᴇᴅ EDITH!"
     )
 
     log_message = (
@@ -386,7 +390,7 @@ def removewhitelist(update: Update, context: CallbackContext) -> str:
             log_message = f"<b>{html.escape(chat.title)}:</b>\n{log_message}"
 
         return log_message
-    message.reply_text("ᴛʜɪs ᴜsᴇʀ ɪs ɴᴏᴛ ᴀ ᴇxᴏɴ!")
+    message.reply_text("ᴛʜɪs ɪs ɴᴏᴛ ᴀ ᴜsᴇʀ !")
     return ""
 
 
@@ -431,9 +435,9 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 
 @whitelist_plus
 def whitelistlist(update: Update, context: CallbackContext):
-    reply = "<b>ᴇxᴏɴ:</b>\n\n"
+    reply = "<b>WOLVES:</b>\n\n"
     m = update.effective_message.reply_text(
-        "<code>ɢᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ ғʀᴏᴍ ᴇxᴏɴ..</code>",
+        "<code>ɢᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ ғʀᴏᴍ HQ..</code>",
         parse_mode=ParseMode.HTML,
     )
     bot = context.bot
@@ -450,9 +454,9 @@ def whitelistlist(update: Update, context: CallbackContext):
 
 @whitelist_plus
 def tigerlist(update: Update, context: CallbackContext):
-    reply = "<b>Classmates:</b>\n\n"
+    reply = "<b>TIGERS:</b>\n\n"
     m = update.effective_message.reply_text(
-        "<code>ɢᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ ғʀᴏᴍ ᴇxᴏɴ ɪǫ.</code>",
+        "<code>ɢᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ ғʀᴏᴍ HQ.</code>",
         parse_mode=ParseMode.HTML,
     )
     bot = context.bot
@@ -488,11 +492,11 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>ɢᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ ғʀᴏᴍ ᴇxᴏɴ ʜǫ.</code>",
+        "<code>ɢᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ ғʀᴏᴍ  ʜǫ.</code>",
         parse_mode=ParseMode.HTML,
     )
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>ʙᴇsᴛᴏ ғʀɪᴇɴᴅᴏs:</b>\n\n"
+    reply = "<b>DRAGONS:</b>\n\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -507,11 +511,11 @@ def sudolist(update: Update, context: CallbackContext):
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>ɢᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ ғʀᴏᴍ ᴀʙɪsʜɴᴏɪ HQ..</code>",
+        "<code>ɢᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ ғʀᴏᴍ  HQ..</code>",
         parse_mode=ParseMode.HTML,
     )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>ғᴀᴍɪʟʏ ᴍᴇᴍʙᴇʀs:</b>\n\n"
+    reply = "<b>HEROES:</b>\n\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -528,7 +532,7 @@ SUPPORT_HANDLER = CommandHandler(
 )
 TIGER_HANDLER = CommandHandler(("addclassmate"), addtiger)
 WHITELIST_HANDLER = CommandHandler(
-    ("EXON", "addwhitelist"), addwhitelist, run_async=True
+    ("EDITH", "addwhitelist"), addwhitelist, run_async=True
 )
 UNSUDO_HANDLER = CommandHandler(
     ("removesudo", "rmbestfriend"), removesudo, run_async=True
@@ -541,7 +545,7 @@ UNWHITELIST_HANDLER = CommandHandler(
     ("removewhitelist", "rmIGNITE"), removewhitelist, run_async=True
 )
 WHITELISTLIST_HANDLER = CommandHandler(
-    ["whitelistlist", "EXONS"], whitelistlist, run_async=True
+    ["whitelistlist", "EDITHS"], whitelistlist, run_async=True
 )
 TIGERLIST_HANDLER = CommandHandler(["classmates"], tigerlist, run_async=True)
 SUPPORTLIST_HANDLER = CommandHandler(
