@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import contextlib
 import datetime
@@ -38,21 +42,21 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
 
-import Exon.modules.sql.users_sql as sql
-from Exon import DEMONS as SUPPORT_USERS
-from Exon import DEV_USERS
-from Exon import DRAGONS as SUDO_USERS
-from Exon import INFOPIC, OWNER_ID
-from Exon import OWNER_USERNAME as AKBOSS
-from Exon import TIGERS
-from Exon import WOLVES as WHITELIST_USERS
-from Exon import StartTime, dispatcher, sw
-from Exon.__main__ import STATS, USER_INFO
-from Exon.modules.disable import DisableAbleCommandHandler
-from Exon.modules.helper_funcs.chat_status import sudo_plus, user_admin
-from Exon.modules.helper_funcs.decorators import Exoncmd
-from Exon.modules.helper_funcs.extraction import extract_user
-from Exon.modules.users import __user_info__ as chat_count
+import Edith.modules.sql.users_sql as sql
+from Edith import DEMONS as SUPPORT_USERS
+from Edith import DEV_USERS
+from Edith import DRAGONS as SUDO_USERS
+from Edith import INFOPIC, OWNER_ID
+from Edith import OWNER_USERNAME as AKBOSS
+from Edith import TIGERS
+from Edith import WOLVES as WHITELIST_USERS
+from Edith import StartTime, dispatcher, sw
+from Edith.__main__ import STATS, USER_INFO
+from Edith.modules.disable import DisableAbleCommandHandler
+from Edith.modules.helper_funcs.chat_status import sudo_plus, user_admin
+from Edith.modules.helper_funcs.decorators import Edithcmd
+from Edith.modules.helper_funcs.extraction import extract_user
+from Edith.modules.users import __user_info__ as chat_count
 
 MARKDOWN_HELP = f"""
 ᴍᴀʀᴋᴅᴏᴡɴ ɪs ᴀ ᴠᴇʀʏ ᴘᴏᴡᴇʀғᴜʟ ғᴏʀᴍᴀᴛᴛɪɴɢ ᴛᴏᴏʟ sᴜᴘᴘᴏʀᴛᴇᴅ ʙʏ ᴛᴇʟᴇɢʀᴀᴍ. {dispatcher.bot.first_name} ʜᴀs sᴏᴍᴇ ᴇɴʜᴀɴᴄᴇᴍᴇɴᴛs, ᴛᴏ ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ \
@@ -82,7 +86,7 @@ Keep in mind that your message <b>MUST</b> contain some text other than just a b
 """
 
 
-@Exoncmd(command="gifid")
+@Edithcmd(command="gifid")
 def gifid(update: Update, _):
     msg = update.effective_message
     if msg.reply_to_message and msg.reply_to_message.animation:
@@ -94,7 +98,7 @@ def gifid(update: Update, _):
         update.effective_message.reply_text("ᴘʟᴇᴀsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀ ɢɪғ ᴛᴏ ɢᴇᴛ ɪᴛs ID.")
 
 
-@Exoncmd(command="info", pass_args=True)
+@Edithcmd(command="info", pass_args=True)
 def info(update: Update, context: CallbackContext):  # sourcery no-metrics
     bot = context.bot
     args = context.args
@@ -183,19 +187,7 @@ def get_user_info(chat: Chat, user: User) -> str:
         f"✦ ᴜsᴇʀ ID: <code>{user.id}</code>\n"
         f"✦ ғɪʀsᴛ ɴᴀᴍᴇ: {html.escape(user.first_name)}"
     )
-    if user.last_name:
-        text += f"\n✦ ʟᴀsᴛ ɴᴀᴍᴇ: {html.escape(user.last_name)}"
-    if user.username:
-        text += f"\n✦ ᴜsᴇʀɴᴀᴍᴇ: @{html.escape(user.username)}"
-    text += f"\n✦ ᴜsᴇʀ ʟɪɴᴋ: {mention_html(user.id, 'link')}"
-    with contextlib.suppress(Exception):
-        if spamwtc := sw.get_ban(int(user.id)):
-            text += "<b>\n\nsᴘᴀᴍᴡᴀᴛᴄʜ:\n</b>"
-            text += "<b>ᴛʜɪs ᴘᴇʀsᴏɴ is ʙᴀɴɴᴇᴅ ɪɴ sᴘᴀᴍᴡᴀᴛᴄʜ!</b>"
-            text += f"\nʀᴇᴀsᴏɴ: <pre>{spamwtc.reason}</pre>"
-            text += "\nAppeal ᴀᴛ @SpamWatchSupport"
-        else:
-            text += "<b>\n\nSpamWatch:</b> Not banned"
+ 
     disaster_level_present = False
     num_chats = sql.get_user_num_chats(user.id)
     text += f"\n\n<b>ᴄʜᴀᴛ ᴄᴏᴜɴᴛ</b>: <code>{num_chats}</code>"
@@ -223,10 +215,10 @@ def get_user_info(chat: Chat, user: User) -> str:
         text += "\n\n<code>ᴏɴᴇ ᴏғ ᴍʏ ᴄʟᴀssᴍᴀᴛᴇs</code> :p"
         disaster_level_present = True
     elif user.id in WHITELIST_USERS:
-        text += "\n\n<code>ᴍᴇᴍʙᴇʀ ᴏғ Exon ᴛᴇᴄʜ, ᴛᴏᴛᴀʟʟʏ ᴄᴏᴏʟ ʀɪɢʜᴛ ?</code>"
+        text += "\n\n<code>ᴍᴇᴍʙᴇʀ ᴏғ Edith ᴛᴇᴄʜ, ᴛᴏᴛᴀʟʟʏ ᴄᴏᴏʟ ʀɪɢʜᴛ ?</code>"
         disaster_level_present = True
     if disaster_level_present:
-        text += ' [<a href="https://t.me/abishnoi_bots/60">?</a>]'
+        text += ' [<a href="https://t.me/BROTHERHOOD_bots/60">?</a>]'
     text += "\n"
     for mod in USER_INFO:
         if mod.__mod_name__ == "Users":
@@ -258,7 +250,7 @@ def shell(command):
     return (stdout, stderr)
 
 
-@Exoncmd(command="markdownhelp", filters=Filters.chat_type.private)
+@Edithcmd(command="markdownhelp", filters=Filters.chat_type.private)
 def markdown_help(update: Update, _):
     update.effective_chat
     update.effective_message.reply_text(f"{MARKDOWN_HELP}", parse_mode=ParseMode.HTML)
@@ -301,7 +293,7 @@ stats_str = """
 """
 
 
-@Exoncmd(command="stats", can_disable=False)
+@Edithcmd(command="stats", can_disable=False)
 @sudo_plus
 def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
@@ -329,8 +321,8 @@ def stats(update, context):
             status
             + "\n*ʙᴏᴛ sᴛᴀᴛɪsᴛɪᴄs*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + "\n\n[ɢɪᴛʜᴜʙ](https://github.com/KingAbishnoi/ExonRobot) | [ᴛᴇʟᴇɢʀᴀᴍ](https://t.me/AbishnoiMF)\n\n"
-            + f"「 ʙʏ[ᴀʙɪsʜɴᴏɪ](t.me/{AKBOSS}) 」\n",
+            + "\n\n[ɢɪᴛʜᴜʙ](https://github.com/TEAM-BROTHERHOOD-COUNCIL/Edith) | [ᴛᴇʟᴇɢʀᴀᴍ](https://t.me/TEAM_BLACK_SUPPORT)\n\n"
+            + f"「 ʙʏ[HUNTER](t.me/ABOUT_HUNT3R) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
@@ -342,9 +334,9 @@ def stats(update, context):
                         "\n*ʙᴏᴛ sᴛᴀᴛɪsᴛɪᴄs*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + "\n\n⍙ [ɢɪᴛʜᴜʙ](https://github.com/KingAbishnoi/ExonRobot) | [ᴛᴇʟᴇɢʀᴀᴍ](https://t.me/AbishnoiMF)\n\n"
+                    + "\n\n⍙ [ɢɪᴛʜᴜʙ](https://github.com/TEAM-BROTHERHOOD-COUNCIL/Edith) | [ᴛᴇʟᴇɢʀᴀᴍ](https://t.me/TEAM_BLACK_SUPPORT)\n\n"
                 )
-                + f"「 ʙʏ [ᴀʙɪsʜɴᴏɪ](t.me/{AKBOSS}) 」\n"
+                + f"「 ʙʏ [HUNTER](t.me/ABOUT_HUNT3R) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
