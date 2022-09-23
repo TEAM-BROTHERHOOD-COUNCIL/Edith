@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import html
 
@@ -28,14 +32,14 @@ from telegram import MAX_MESSAGE_LENGTH, ParseMode, Update
 from telegram.ext.dispatcher import CallbackContext
 from telegram.utils.helpers import escape_markdown
 
-import Exon.modules.sql.userinfo_sql as sql
-from Exon import DEV_USERS
-from Exon import DRAGONS as SUDO_USERS
-from Exon.modules.helper_funcs.decorators import Exoncmd
-from Exon.modules.helper_funcs.extraction import extract_user
+import Edith.modules.sql.userinfo_sql as sql
+from Edith import DEV_USERS
+from Edith import DRAGONS as SUDO_USERS
+from Edith.modules.helper_funcs.decorators import Edithcmd
+from Edith.modules.helper_funcs.extraction import extract_user
 
 
-@Exoncmd(command="me", pass_args=True)
+@Edithcmd(command="me", pass_args=True)
 def about_me(update: Update, context: CallbackContext):
     args = context.args
     bot = context.bot
@@ -61,7 +65,7 @@ def about_me(update: Update, context: CallbackContext):
         )
 
 
-@Exoncmd(command="setme")
+@Edithcmd(command="setme")
 def set_about_me(update: Update, context: CallbackContext):
     bot = context.bot
     message = update.effective_message
@@ -93,7 +97,7 @@ def set_about_me(update: Update, context: CallbackContext):
             )
 
 
-@Exoncmd(command="bio", pass_args=True)
+@Edithcmd(command="bio", pass_args=True)
 def about_bio(update: Update, context: CallbackContext):
     args = context.args
     bot = context.bot
@@ -160,7 +164,7 @@ def about_bio(update: Update, context: CallbackContext):
         message.reply_text("ʀᴇᴘʟʏ ᴛᴏ sᴏᴍᴇᴏɴᴇ's ᴍᴇssᴀɢᴇ ᴛᴏ sᴇᴛ ᴛʜᴇɪʀ ʙɪᴏ!")
 
 
-@Exoncmd(command="setbio")
+@Edithcmd(command="setbio")
 def set_about_bio(update: Update, context: CallbackContext):
     message = update.effective_message
     sender_id = update.effective_user.id
