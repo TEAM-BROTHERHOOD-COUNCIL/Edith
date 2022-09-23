@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import asyncio
 import os
@@ -36,8 +40,8 @@ from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.callbackqueryhandler import CallbackQueryHandler
 from telethon import events
 
-from Exon import DEV_USERS, OWNER_ID, dispatcher, telethn
-from Exon.modules.helper_funcs.chat_status import dev_plus
+from Edith import DEV_USERS, OWNER_ID, dispatcher, telethn
+from Edith.modules.helper_funcs.chat_status import dev_plus
 
 
 def leave_cb(update: Update, context: CallbackContext):
@@ -57,13 +61,13 @@ def leave_cb(update: Update, context: CallbackContext):
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        state = "off" if Exon.ALLOW_CHATS else "ʟᴏᴄᴋᴅᴏᴡɴ ɪs " + "on"
+        state = "off" if Edith.ALLOW_CHATS else "ʟᴏᴄᴋᴅᴏᴡɴ ɪs " + "on"
         update.effective_message.reply_text(f"ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛᴇ: {state}")
         ʀᴇᴛᴜʀɴ
     if args[0].lower() in ["off", "no"]:
-        Exon.ALLOW_CHATS = True
+        Edith.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        Exon.ALLOW_CHATS = False
+        Edith.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("ғᴏʀᴍᴀᴛ: /lockdown Yes/No ᴏʀ Off/On")
         return
@@ -157,7 +161,7 @@ def leave(update: Update, context: CallbackContext):
     else:
         chat = update.effective_chat
         # user = update.effective_user
-        Exon_leave_bt = [
+        Edith_leave_bt = [
             [
                 InlineKeyboardButton(
                     text="ɪ ᴀᴍ sᴜʀᴇ ᴏғ ᴛʜɪs ᴀᴄᴛɪᴏɴ.",
@@ -168,7 +172,7 @@ def leave(update: Update, context: CallbackContext):
 
         update.effective_message.reply_text(
             f"I'm ɢᴏɪɴɢ ᴛᴏ ʟᴇᴀᴠᴇ {chat.title}, ᴘʀᴇss ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ᴄᴏɴғɪʀᴍ",
-            reply_markup=InlineKeyboardMarkup(Exon_leave_bt),
+            reply_markup=InlineKeyboardMarkup(Edith_leave_bt),
         )
 
 
