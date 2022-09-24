@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,13 +21,17 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 from datetime import datetime
 from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from Exon.modules.helper_funcs.misc import is_module_loaded
+from Edith.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -37,9 +41,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue
     from telegram.utils.helpers import escape_markdown
 
-    from Exon import EVENT_LOGS, LOGGER, dispatcher
-    from Exon.modules.helper_funcs.chat_status import user_admin
-    from Exon.modules.sql import log_channel_sql as sql
+    from Edith import EVENT_LOGS, LOGGER, dispatcher
+    from Edith.modules.helper_funcs.chat_status import user_admin
+    from Edith.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
