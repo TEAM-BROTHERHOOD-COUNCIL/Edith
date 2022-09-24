@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import html
 
@@ -28,13 +32,13 @@ from telegram import TelegramError, Update
 from telegram.ext import CallbackContext
 from telegram.ext.filters import Filters
 
-import Exon.modules.sql.antilinkedchannel_sql as sql
-from Exon.modules.helper_funcs.anonymous import AdminPerms, user_admin
-from Exon.modules.helper_funcs.chat_status import bot_admin, bot_can_delete
-from Exon.modules.helper_funcs.decorators import Exoncmd, Exonmsg
+import Edith.modules.sql.antilinkedchannel_sql as sql
+from Edith.modules.helper_funcs.anonymous import AdminPerms, user_admin
+from Edith.modules.helper_funcs.chat_status import bot_admin, bot_can_delete
+from Edith.modules.helper_funcs.decorators import Edithcmd, Edithmsg
 
 
-@Exoncmd(command="cleanlinked", group=112)
+@Edithcmd(command="cleanlinked", group=112)
 @bot_can_delete
 @user_admin(AdminPerms.CAN_RESTRICT_MEMBERS)
 def set_antilinkedchannel(update: Update, context: CallbackContext):
@@ -71,7 +75,7 @@ def set_antilinkedchannel(update: Update, context: CallbackContext):
     )
 
 
-@Exonmsg(Filters.is_automatic_forward, group=111)
+@Edithmsg(Filters.is_automatic_forward, group=111)
 def eliminate_linked_channel_msg(update: Update, _: CallbackContext):
     message = update.effective_message
     chat = update.effective_chat
@@ -83,7 +87,7 @@ def eliminate_linked_channel_msg(update: Update, _: CallbackContext):
         return
 
 
-@Exoncmd(command="antichannelpin", group=114)
+@Edithcmd(command="antichannelpin", group=114)
 @bot_admin
 @user_admin(AdminPerms.CAN_RESTRICT_MEMBERS)
 def set_antipinchannel(update: Update, context: CallbackContext):
@@ -118,7 +122,7 @@ def set_antipinchannel(update: Update, context: CallbackContext):
     )
 
 
-@Exonmsg(Filters.is_automatic_forward | Filters.status_update.pinned_message, group=113)
+@Edithmsg(Filters.is_automatic_forward | Filters.status_update.pinned_message, group=113)
 def eliminate_linked_channel_msg(update: Update, _: CallbackContext):
     message = update.effective_message
     chat = update.effective_chat
