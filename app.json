@@ -1,13 +1,13 @@
 {
       "name": "edith ROBOT",
       "description": "A Telegram group management bot.",
-      "logo": "", 
+      "logo": "https://te.legra.ph/file/dbd33d6f299878bc3c828.jpg", 
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Exon"
+         "Edith"
       ],   
    "repository": "https://github.com/TEAM-BROTHERHOOD-COUNCIL/Edith",
    "addons": [
@@ -106,7 +106,7 @@
      "START_IMG": {
          "description": "A Start img link",
          "required": false,
-         "value": " https://te.legra.ph/file/aa3f43c174f03b422aea8.jpg"
+         "value": "https://te.legra.ph/file/dbd33d6f299878bc3c828.jpg"
       },
       "DEV_USERS": {
          "description": "Enter the IDs of the users who are the Developers of the Bot. If you are newbie and want help from us Itself, then keep the IDs as they are and add yours",
