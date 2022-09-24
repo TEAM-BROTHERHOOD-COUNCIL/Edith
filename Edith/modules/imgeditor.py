@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 from pyrogram import filters
 from pyrogram.types import (
@@ -30,10 +34,10 @@ from pyrogram.types import (
     Message,
 )
 
-from Exon import BOT_NAME, pgram
+from Edith import BOT_NAME, pgram
 
-# By @AbishnoMF
-from Exon.utils.resources.ImageEditor.edit_1 import (  # pylint:disable=import-error
+
+from Edith.utils.resources.ImageEditor.edit_1 import (  # pylint:disable=import-error
     black_white,
     box_blur,
     bright,
@@ -41,7 +45,7 @@ from Exon.utils.resources.ImageEditor.edit_1 import (  # pylint:disable=import-e
     mix,
     normal_blur,
 )
-from Exon.utils.resources.ImageEditor.edit_2 import (  # pylint:disable=import-error
+from Edith.utils.resources.ImageEditor.edit_2 import (  # pylint:disable=import-error
     cartoon,
     circle_with_bg,
     circle_without_bg,
@@ -51,13 +55,13 @@ from Exon.utils.resources.ImageEditor.edit_2 import (  # pylint:disable=import-e
     sepia_mode,
     sticker,
 )
-from Exon.utils.resources.ImageEditor.edit_3 import (  # pylint:disable=import-error
+from Edith.utils.resources.ImageEditor.edit_3 import (  # pylint:disable=import-error
     black_border,
     blue_border,
     green_border,
     red_border,
 )
-from Exon.utils.resources.ImageEditor.edit_4 import (  # pylint:disable=import-error
+from Edith.utils.resources.ImageEditor.edit_4 import (  # pylint:disable=import-error
     inverted,
     removebg_plain,
     removebg_sticker,
@@ -67,7 +71,7 @@ from Exon.utils.resources.ImageEditor.edit_4 import (  # pylint:disable=import-e
     rotate_270,
     round_sticker,
 )
-from Exon.utils.resources.ImageEditor.edit_5 import (  # pylint:disable=import-error
+from Edith.utils.resources.ImageEditor.edit_5 import (  # pylint:disable=import-error
     normalglitch_1,
     normalglitch_2,
     normalglitch_3,
