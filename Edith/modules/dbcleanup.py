@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 from time import sleep
 
@@ -28,10 +32,10 @@ from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
 
-import Exon.modules.sql.global_bans_sql as gban_sql
-import Exon.modules.sql.users_sql as user_sql
-from Exon import DEV_USERS, OWNER_ID, dispatcher
-from Exon.modules.helper_funcs.chat_status import dev_plus
+import Edith.modules.sql.global_bans_sql as gban_sql
+import Edith.modules.sql.users_sql as user_sql
+from Edith import DEV_USERS, OWNER_ID, dispatcher
+from Edith.modules.helper_funcs.chat_status import dev_plus
 
 
 def get_muted_chats(bot: Bot, update: Update, leave: bool = False):
