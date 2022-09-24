@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ 
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import html
 from typing import Optional
@@ -36,7 +40,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 
-from Exon import (
+from Edith import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -46,8 +50,8 @@ from Exon import (
     WOLVES,
     dispatcher,
 )
-from Exon.modules.disable import DisableAbleCommandHandler
-from Exon.modules.helper_funcs.chat_status import (
+from Edith.modules.disable import DisableAbleCommandHandler
+from Edith.modules.helper_funcs.chat_status import (
     bot_admin,
     can_delete,
     can_restrict,
@@ -60,10 +64,10 @@ from Exon.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     user_can_ban,
 )
-from Exon.modules.helper_funcs.extraction import extract_user_and_text
-from Exon.modules.helper_funcs.filters import CustomFilters
-from Exon.modules.helper_funcs.string_handling import extract_time
-from Exon.modules.log_channel import gloggable, loggable
+from Edith.modules.helper_funcs.extraction import extract_user_and_text
+from Edith.modules.helper_funcs.filters import CustomFilters
+from Edith.modules.helper_funcs.string_handling import extract_time
+from Edith.modules.log_channel import gloggable, loggable
 
 
 @connection_status
