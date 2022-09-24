@@ -2,10 +2,10 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from telethon import functions, types
 from telethon.tl.types import ChatBannedRights
 
-from Exon import dispatcher
-from Exon import telethn as tbot
-from Exon.events import register
-from Exon.modules.sql.nightmode_sql import (
+from Edith import dispatcher
+from Edith import telethn as tbot
+from Edith.events import register
+from Edith.modules.sql.nightmode_sql import (
     add_nightmode,
     get_all_chat_id,
     is_nightmode_indb,
