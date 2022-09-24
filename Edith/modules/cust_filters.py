@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import re
 from html import escape
@@ -38,24 +42,24 @@ from telegram.error import BadRequest
 from telegram.ext import DispatcherHandlerStop, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from Exon import DRAGONS
-from Exon import LOGGER as log
-from Exon import dispatcher
-from Exon.modules.connection import connected
-from Exon.modules.helper_funcs.alternate import send_message, typing_action
-from Exon.modules.helper_funcs.anonymous import AdminPerms, user_admin
-from Exon.modules.helper_funcs.decorators import Exoncallback, Exoncmd, Exonmsg
-from Exon.modules.helper_funcs.extraction import extract_text
-from Exon.modules.helper_funcs.filters import CustomFilters
-from Exon.modules.helper_funcs.misc import build_keyboard_parser
-from Exon.modules.helper_funcs.msg_types import get_filter_type
-from Exon.modules.helper_funcs.string_handling import (
+from Edith import DRAGONS
+from Edith import LOGGER as log
+from Edith import dispatcher
+from Edith.modules.connection import connected
+from Edith.modules.helper_funcs.alternate import send_message, typing_action
+from Edith.modules.helper_funcs.anonymous import AdminPerms, user_admin
+from Edith.modules.helper_funcs.decorators import Edithcallback, Edithcmd, Edithmsg
+from Edith.modules.helper_funcs.extraction import extract_text
+from Edith.modules.helper_funcs.filters import CustomFilters
+from Edith.modules.helper_funcs.misc import build_keyboard_parser
+from Edith.modules.helper_funcs.msg_types import get_filter_type
+from Edith.modules.helper_funcs.string_handling import (
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
     split_quotes,
 )
-from Exon.modules.sql import cust_filters_sql as sql
+from Edith.modules.sql import cust_filters_sql as sql
 
 HANDLER_GROUP = 10
 
@@ -73,7 +77,7 @@ ENUM_FUNC_MAP = {
 
 
 @typing_action
-@Exoncmd(command="filters", admin_ok=True)
+@Edithcmd(command="filters", admin_ok=True)
 def list_handlers(update, context):
     chat = update.effective_chat
     user = update.effective_user
@@ -120,7 +124,7 @@ def list_handlers(update, context):
 
 
 # NOT ASYNC BECAUSE DISPATCHER HANDLER RAISED
-@Exoncmd(command="filter", run_async=False)
+@Edithcmd(command="filter", run_async=False)
 @user_admin(AdminPerms.CAN_CHANGE_INFO)
 @typing_action
 def filters(update, context):  # sourcery no-metrics
@@ -244,7 +248,7 @@ def filters(update, context):  # sourcery no-metrics
 
 
 # NOT ASYNC BECAUSE DISPATCHER HANDLER RAISED
-@Exoncmd(command="stop", run_async=False)
+@Edithcmd(command="stop", run_async=False)
 @user_admin(AdminPerms.CAN_CHANGE_INFO)
 @typing_action
 def stop_filter(update, context):
@@ -285,7 +289,7 @@ def stop_filter(update, context):
     )
 
 
-@Exonmsg((CustomFilters.has_text & ~Filters.update.edited_message))
+@Edithmsg((CustomFilters.has_text & ~Filters.update.edited_message))
 def reply_filter(update, context):  # sourcery no-metrics
     chat = update.effective_chat  # type: Optional[Chat]
     message = update.effective_message  # type: Optional[Message]
@@ -474,7 +478,7 @@ def reply_filter(update, context):  # sourcery no-metrics
             break
 
 
-@Exoncmd(command="removeallfilters", filters=Filters.chat_type.groups)
+@Edithcmd(command="removeallfilters", filters=Filters.chat_type.groups)
 def rmall_filters(update, _):
     chat = update.effective_chat
     user = update.effective_user
@@ -501,7 +505,7 @@ def rmall_filters(update, _):
         )
 
 
-@Exoncallback(pattern=r"filters_.*")
+@Edithcallback(pattern=r"filters_.*")
 def rmall_callback(update, _):
     query = update.callback_query
     chat = update.effective_chat
