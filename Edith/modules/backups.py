@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import json
 import os
@@ -31,16 +35,16 @@ from telegram import Message, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler
 
-import Exon.modules.sql.blacklist_sql as blacklistsql
-import Exon.modules.sql.locks_sql as locksql
-import Exon.modules.sql.notes_sql as sql
-import Exon.modules.sql.rules_sql as rulessql
-from Exon import JOIN_LOGGER, LOGGER, OWNER_ID, SUPPORT_CHAT, dispatcher
-from Exon.__main__ import DATA_IMPORT
-from Exon.modules.connection import connected
-from Exon.modules.helper_funcs.alternate import typing_action
-from Exon.modules.helper_funcs.chat_status import user_admin
-from Exon.modules.sql import disable_sql as disabledsql
+import Edith.modules.sql.blacklist_sql as blacklistsql
+import Edith.modules.sql.locks_sql as locksql
+import Edith.modules.sql.notes_sql as sql
+import Edith.modules.sql.rules_sql as rulessql
+from Edith import JOIN_LOGGER, LOGGER, OWNER_ID, SUPPORT_CHAT, dispatcher
+from Edith.__main__ import DATA_IMPORT
+from Edith.modules.connection import connected
+from Edith.modules.helper_funcs.alternate import typing_action
+from Edith.modules.helper_funcs.chat_status import user_admin
+from Edith.modules.sql import disable_sql as disabledsql
 
 
 @user_admin
