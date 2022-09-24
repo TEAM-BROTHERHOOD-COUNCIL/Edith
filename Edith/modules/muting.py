@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import html
 import re
@@ -41,8 +45,8 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
 from telegram.utils.helpers import mention_html
 
-from Exon import LOGGER, TIGERS, dispatcher
-from Exon.modules.helper_funcs.chat_status import (
+from Edith import LOGGER, TIGERS, dispatcher
+from Edith.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -50,10 +54,10 @@ from Exon.modules.helper_funcs.chat_status import (
     user_admin,
     user_admin_no_reply,
 )
-from Exon.modules.helper_funcs.extraction import extract_user_and_text
-from Exon.modules.helper_funcs.string_handling import extract_time
-from Exon.modules.log_channel import loggable
-from Exon.modules.sql.approve_sql import is_approved
+from Edith.modules.helper_funcs.extraction import extract_user_and_text
+from Edith.modules.helper_funcs.string_handling import extract_time
+from Edith.modules.log_channel import loggable
+from Edith.modules.sql.approve_sql import is_approved
 
 
 def check_user(user_id: int, bot: Bot, chat: Chat) -> Optional[str]:
