@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022  Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import os
 from time import sleep
@@ -29,9 +33,9 @@ from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters
 
-from Exon import OWNER_ID, dispatcher
-from Exon.modules.helper_funcs.extraction import extract_user
-from Exon.modules.sql.users_sql import get_user_com_chats
+from Edith import OWNER_ID, dispatcher
+from Edith.modules.helper_funcs.extraction import extract_user
+from Edith.modules.sql.users_sql import get_user_com_chats
 
 
 def get_user_common_chats(update: Update, context: CallbackContext):
