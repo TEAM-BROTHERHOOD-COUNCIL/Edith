@@ -3,10 +3,10 @@ from io import BytesIO
 
 from pyrogram import filters
 
-from Exon import aiohttpsession as aiosession
-from Exon import pgram
-from Exon.events import register
-from Exon.utils.errors import capture_err
+from Edith import aiohttpsession as aiosession
+from Edith import pgram
+from Edith.events import register
+from Edith.utils.errors import capture_err
 
 
 async def make_carbon(code):
@@ -34,7 +34,7 @@ async def carbon_func(_, message):
 
 @register(pattern="^/repo$")
 async def _(event):
-    loda = "➥ [EXON](https://github.com/TEAM-ABG/ExonRobot)"
+    loda = "➥ [edith](https://github.com/)"
     lund = await event.reply(loda)
     await asyncio.sleep(10)
     await event.delete()
