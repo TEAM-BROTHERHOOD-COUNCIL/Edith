@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import html
 from typing import Optional
@@ -30,17 +34,17 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
 from telegram.utils.helpers import mention_html, mention_markdown
 
-import Exon.modules.sql.blsticker_sql as sql
-from Exon import LOGGER, dispatcher
-from Exon.modules.connection import connected
-from Exon.modules.disable import DisableAbleCommandHandler
-from Exon.modules.helper_funcs.alternate import send_message
-from Exon.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Exon.modules.helper_funcs.misc import split_message
-from Exon.modules.helper_funcs.string_handling import extract_time
-from Exon.modules.log_channel import loggable
-from Exon.modules.sql.approve_sql import is_approved
-from Exon.modules.warns import warn
+import Edith.modules.sql.blsticker_sql as sql
+from Edith import LOGGER, dispatcher
+from Edith.modules.connection import connected
+from Edith.modules.disable import DisableAbleCommandHandler
+from Edith.modules.helper_funcs.alternate import send_message
+from Edith.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Edith.modules.helper_funcs.misc import split_message
+from Edith.modules.helper_funcs.string_handling import extract_time
+from Edith.modules.log_channel import loggable
+from Edith.modules.sql.approve_sql import is_approved
+from Edith.modules.warns import warn
 
 
 def blackliststicker(update: Update, context: CallbackContext):
