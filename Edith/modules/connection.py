@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import re
 import time
@@ -29,10 +33,10 @@ from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackQueryHandler, CommandHandler
 
-import Exon.modules.sql.connection_sql as sql
-from Exon import DEV_USERS, DRAGONS, dispatcher
-from Exon.modules.helper_funcs import chat_status
-from Exon.modules.helper_funcs.alternate import send_message, typing_action
+import Edith.modules.sql.connection_sql as sql
+from Edith import DEV_USERS, DRAGONS, dispatcher
+from Edith.modules.helper_funcs import chat_status
+from Edith.modules.helper_funcs.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
 
