@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import ast
 import random
@@ -29,9 +33,9 @@ from io import BytesIO
 from typing import Optional
 
 from telegram import (
-    MAX_MESSAGE_LENGTH,
+    MAX_MEAGE_LENGTH,
     InlineKeyboardButton,
-    InlineKeyboardMarkup,
+    InlineKeyboardMarkup,SS
     Message,
     ParseMode,
     Update,
@@ -46,14 +50,14 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_markdown
 
-import Exon.modules.sql.notes_sql as sql
-from Exon import DRAGONS, JOIN_LOGGER, LOGGER, SUPPORT_CHAT, dispatcher
-from Exon.modules.disable import DisableAbleCommandHandler
-from Exon.modules.helper_funcs.chat_status import connection_status, user_admin
-from Exon.modules.helper_funcs.handlers import MessageHandlerChecker
-from Exon.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from Exon.modules.helper_funcs.msg_types import get_note_type
-from Exon.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
+import Edith.modules.sql.notes_sql as sql
+from Edith import DRAGONS, JOIN_LOGGER, LOGGER, SUPPORT_CHAT, dispatcher
+from Edith.modules.disable import DisableAbleCommandHandler
+from Edith.modules.helper_funcs.chat_status import connection_status, user_admin
+from Edith.modules.helper_funcs.handlers import MessageHandlerChecker
+from Edith.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Edith.modules.helper_funcs.msg_types import get_note_type
+from Edith.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
 
 FILE_MATCHER = re.compile(r"^###file_id(!photo)?###:(.*?)(?:\s|$)")
 STICKER_MATCHER = re.compile(r"^###sticker(!photo)?###:")
