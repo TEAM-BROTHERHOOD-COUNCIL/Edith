@@ -197,7 +197,7 @@ def chats(update: Update, context: CallbackContext):
         update.effective_message.reply_document(
             document=output,
             filename="glist.txt",
-            caption="ʜᴇʀᴇ ʙᴇ ᴛʜᴇ ʟɪsᴛ ᴏғ ɢʀᴏᴜᴘs ɪɴ ᴇxᴏɴ ᴅᴀᴛᴀʙᴀsᴇ.",
+            caption="ʜᴇʀᴇ ʙᴇ ᴛʜᴇ ʟɪsᴛ ᴏғ ɢʀᴏᴜᴘs ɪɴ ᴅᴀᴛᴀʙᴀsᴇ.",
         )
 
 
