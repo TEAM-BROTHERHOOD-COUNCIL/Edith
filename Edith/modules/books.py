@@ -75,7 +75,7 @@ async def _(event):
 
         f.write(f"ʙʏ @{BOT_USERNAME}.")
         f.close()
-        caption = f"ᴇxᴏɴ  \nᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ @{SUPPORT_CHAT} "
+        caption = f"EDITH  \nᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ @{SUPPORT_CHAT} "
 
         await telethn.send_file(
             event.chat_id,
