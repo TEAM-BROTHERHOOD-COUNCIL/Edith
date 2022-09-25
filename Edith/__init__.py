@@ -338,9 +338,9 @@ aiohttpsession = ClientSession()
 # ARQ Client
 print("[INFO]: ɪɴɪᴛɪᴀʟɪᴢɪɴɢ ᴀʀǫ ᴄʟɪᴇɴᴛ")
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
-print("[ᴇxᴏɴ]: ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴛᴏ ᴇxᴏɴ • PostgreSQL ᴅᴀᴛᴀʙᴀsᴇ")
+print("[EDITH]: ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴛᴏ EDITH • PostgreSQL ᴅᴀᴛᴀʙᴀsᴇ")
 # ubot = TelegramClient(StringSession(STRING_SESSION), APP_ID, APP_HASH)
-print("[ᴇxᴏɴ]: ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴛᴏ ᴇxᴏɴ • ᴜsᴇʀʙᴏᴛ (t.me/AbishnoiMF)")
+print("[EDITH]: ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴛᴏ EDITH • ᴜsᴇʀʙᴏᴛ (t.me/TBH_COUNCIL_SUPPORT)")
 timeout = httpx.Timeout(40)
 http = httpx.AsyncClient(http2=True, timeout=timeout)
 
