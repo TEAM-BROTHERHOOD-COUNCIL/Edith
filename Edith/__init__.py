@@ -180,7 +180,7 @@ if ENV:
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)  # Don't Change
     # BOT_NAME = os.environ.get("BOT_NAME", True)  # Name Of your Bot.4
     BOT_API_URL = os.environ.get("BOT_API_URL", "https://api.telegram.org/bot")
-    MONGO_DB = "Exon"
+    MONGO_DB = "Edith"
     GOOGLE_CHROME_BIN = "/usr/bin/google-chrome"
     CHROME_DRIVER = "/usr/bin/chromedriver"
     DB_URI = os.environ.get("DATABASE_URL")
@@ -393,7 +393,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from Exon.modules.helper_funcs.handlers import (
+from Edith.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
