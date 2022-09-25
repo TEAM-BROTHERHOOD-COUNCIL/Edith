@@ -49,10 +49,10 @@ karma_negative_group = 4
 
 from pymongo import MongoClient
 
-from Exon import MONGO_DB_URL
+from Edith import MONGO_DB_URL
 
 worddb = MongoClient(MONGO_DB_URL)
-k = worddb["ExonKarma"]["karma_status"]
+k = worddb["EdithKarma"]["karma_status"]
 
 
 async def is_admins(chat_id: int):
