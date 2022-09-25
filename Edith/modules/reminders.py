@@ -232,7 +232,7 @@ __help__ = """
 ✦ `/clearreminder 1234567890123456789`
 """
 
-# ʙsᴅᴋ ᴄᴏᴘʏ ᴋᴀʀ ʀᴀ ʜ ᴄʀᴇᴅɪᴛ ᴅᴇ ᴅᴇɴᴀ @AbishnoiMF|@Abishnoi
+# ʙsᴅᴋ ᴄᴏᴘʏ ᴋᴀʀ ʀᴀ ʜ ᴄʀᴇᴅɪᴛ ᴅᴇ ᴅᴇɴᴀ 
 
 RemindersHandler = CommandHandler(
     ["reminders", "myreminders"],
