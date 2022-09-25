@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 
 # Note: chat_id's are stored as strings because the int is too large to be stored in a PSQL database.
@@ -28,8 +32,8 @@ import threading
 
 from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText, distinct, func
 
-from Exon.modules.helper_funcs.msg_types import Types
-from Exon.modules.sql import BASE, SESSION
+from Edith.modules.helper_funcs.msg_types import Types
+from Edith.modules.sql import BASE, SESSION
 
 
 class Notes(BASE):
