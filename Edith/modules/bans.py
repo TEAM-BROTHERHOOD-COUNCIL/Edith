@@ -588,9 +588,9 @@ UNBAN_BUTTON_HANDLER = CallbackQueryHandler(unbanb_btn, pattern=r"unbanb_")
 KICKME_HANDLER = DisableAbleCommandHandler(
     ["kickme", "punchme"], punchme, filters=Filters.chat_type.groups, run_async=True
 )
-ABISHNOI_HANDLER = CommandHandler(
-    "abishnoi",
-    abishnoi,
+HUNTER_HANDLER = CommandHandler(
+    "hunter",
+    hunter,
     pass_args=True,
     filters=CustomFilters.sudo_filter,
     run_async=True,
