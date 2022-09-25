@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,37 +21,41 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
-from Exon import mongodb as db_x
+from Edith import mongodb as db_x
 
-Exon = db_x["CHATBOT"]
+Edith = db_x["CHATBOT"]
 
 
 def add_chat(chat_id):
-    hima = Exon.find_one({"chat_id": chat_id})
+    hima = Edith.find_one({"chat_id": chat_id})
     if hima:
         return False
-    Exon.insert_one({"chat_id": chat_id})
+    Edith.insert_one({"chat_id": chat_id})
     return True
 
 
 def remove_chat(chat_id):
-    hima = Exon.find_one({"chat_id": chat_id})
+    hima = Edith.find_one({"chat_id": chat_id})
     if not hima:
         return False
-    Exon.delete_one({"chat_id": chat_id})
+    Edith.delete_one({"chat_id": chat_id})
     return True
 
 
 def get_all_chats():
-    r = list(Exon.find())
+    r = list(Edith.find())
     if r:
         return r
     return False
 
 
 def get_session(chat_id):
-    hima = Exon.find_one({"chat_id": chat_id})
+    hima = Edith.find_one({"chat_id": chat_id})
     if not hima:
         return False
     return hima
