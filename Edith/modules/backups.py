@@ -345,7 +345,7 @@ def export_data(update, context):
         },
     }
     baccinfo = json.dumps(backup, indent=4)
-    with open("ExonRobot{}Backup".format(chat_id), "w") as f:
+    with open("EdithRobot{}Backup".format(chat_id), "w") as f:
         f.write(str(baccinfo))
     context.bot.sendChatAction(current_chat_id, "upload_document")
     tgl = time.strftime("%H:%M:%S - %d/%m/%Y", time.localtime(time.time()))
@@ -363,7 +363,7 @@ def export_data(update, context):
         pass
     context.bot.sendDocument(
         current_chat_id,
-        document=open("ExonRobot{}Backup".format(chat_id), "rb"),
+        document=open("EdithRobot{}Backup".format(chat_id), "rb"),
         caption="*sᴜᴄᴄᴇssғᴜʟʟʏ ᴇxᴘᴏʀᴛᴇᴅ ʙᴀᴄᴋᴜᴘ:*\nᴄʜᴀᴛ: `{}`\nᴄʜᴀᴛ ɪᴅ: `{}`\nᴏɴ: `{}`\n\nɴᴏᴛᴇ: ᴛʜɪs `ᴇxᴏɴʀᴏʙᴏᴛ-ʙᴀᴄᴋᴜᴘ` ᴡᴀs sᴘᴇᴄɪᴀʟʟʏ ᴍᴀᴅᴇ ғᴏʀ ɴᴏᴛᴇs.".format(
             chat.title,
             chat_id,
@@ -373,7 +373,7 @@ def export_data(update, context):
         reply_to_message_id=msg.message_id,
         parse_mode=ParseMode.MARKDOWN,
     )
-    os.remove("Exon{}Backup".format(chat_id))  # Cleaning file
+    os.remove("Edith{}Backup".format(chat_id))  # Cleaning file
 
 
 # Temporary data
