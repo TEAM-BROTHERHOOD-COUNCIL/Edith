@@ -57,7 +57,7 @@ def load(update: Update, context: CallbackContext):
     )
 
     try:
-        imported_module = importlib.import_module(f"Exon.modules.{text}")
+        imported_module = importlib.import_module(f"Edith.modules.{text}")
     except:
         load_messasge.edit_text("ᴅᴏᴇs ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ ᴇᴠᴇɴ ᴇxɪsᴛ?")
         return
