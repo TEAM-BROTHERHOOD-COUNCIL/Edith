@@ -164,10 +164,10 @@ if ENV:
     BOT_ID = int(os.environ.get("BOT_ID", None))  # Telegram Bot ID (EXP:- 1241223850)
     SUPPORT_CHAT = os.environ.get(
         "SUPPORT_CHAT", None
-    )  # Support Chat Group Link (Use @AbishnoiMF || Dont Use https://t.me/AbishnoiMF)
+    )  # Support Chat Group Link (Use @TBH_COUNCIL_SUPPORT || Dont Use https://t.me/TBH_COUNCIL_SUPPORT)
     UPDATES_CHANNEL = os.environ.get(
         "UPDATES_CHANNEL", None
-    )  # Updates channel for bot (Use @AbishnoiMF instead of t.me//example)
+    )  # Updates channel for bot (Use @TBH_COUNCIL_SUPPORT instead of t.me//example)
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "")  # Bot Username
     # Telethon Based String Session (2nd ID) [ From https://repl.it/@SpEcHiDe/GenerateStringSession ]
     API_ID = os.environ.get("APP_ID", None)  # 2nd ID
