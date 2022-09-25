@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Arsh
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import html
 import re
@@ -48,26 +52,26 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from Exon import TIGERS, WOLVES, dispatcher
-from Exon.modules.disable import DisableAbleCommandHandler
-from Exon.modules.helper_funcs.chat_status import (
+from Edith import TIGERS, WOLVES, dispatcher
+from Edith.modules.disable import DisableAbleCommandHandler
+from Edith.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from Exon.modules.helper_funcs.extraction import (
+from Edith.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from Exon.modules.helper_funcs.filters import CustomFilters
-from Exon.modules.helper_funcs.misc import split_message
-from Exon.modules.helper_funcs.string_handling import split_quotes
-from Exon.modules.log_channel import loggable
-from Exon.modules.sql import warns_sql as sql
-from Exon.modules.sql.approve_sql import is_approved
+from Edith.modules.helper_funcs.filters import CustomFilters
+from Edith.modules.helper_funcs.misc import split_message
+from Edith.modules.helper_funcs.string_handling import split_quotes
+from Edith.modules.log_channel import loggable
+from Edith.modules.sql import warns_sql as sql
+from Edith.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>ᴄᴜʀʀᴇɴᴛ ᴡᴀʀɴɪɴɢ ғɪʟᴛᴇʀs ɪɴ ᴛʜɪs ᴄʜᴀᴛ:</b>\n"
