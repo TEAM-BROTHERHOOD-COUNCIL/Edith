@@ -198,7 +198,7 @@ def gitpull(update: Update, context: CallbackContext):
 @dev_plus
 def restart(update: Update, context: CallbackContext):
     update.effective_message.reply_text("ᴇxɪᴛɪɴɢ ᴀʟʟ ᴀʟʟ ᴀɴᴅ sᴛᴀʀᴛɪɴɢ ᴀ ɴᴇᴡ ɪɴsᴛᴀɴᴄᴇ!")
-    process = subprocess.run("pkill python3 && python3 -m Exon", shell=True, check=True)
+    process = subprocess.run("pkill python3 && python3 -m Edith", shell=True, check=True)
     process.communicate()
 
 
