@@ -108,10 +108,10 @@ def warn(
 
     if user.id in WOLVES:
         if warner:
-            message.reply_text("ᴀʙɪsʜɴᴏɪ ᴀʀᴇ ᴡᴀʀɴ ɪᴍᴍᴜɴᴇ.")
+            message.reply_text("HUNTER ᴀʀᴇ ᴡᴀʀɴ ɪᴍᴍᴜɴᴇ.")
         else:
             message.reply_text(
-                "ᴀʙɪsʜɴᴏɪ ᴛʀɪɢɢᴇʀᴇᴅ ᴀɴ ᴀᴜᴛᴏ ᴡᴀʀɴ ғɪʟᴛᴇʀ!\nI ᴄᴀɴ'ᴛ ᴡᴀʀɴ ᴇxᴏɴ ʙᴜᴛ ᴛʜᴇʏ sʜᴏᴜʟᴅ ᴀᴠᴏɪᴅ ᴀʙᴜsɪɴɢ ᴛʜɪs."
+                "HUNTER ᴛʀɪɢɢᴇʀᴇᴅ ᴀɴ ᴀᴜᴛᴏ ᴡᴀʀɴ ғɪʟᴛᴇʀ!\nI ᴄᴀɴ'ᴛ ᴡᴀʀɴ  ʙᴜᴛ ᴛʜᴇʏ sʜᴏᴜʟᴅ ᴀᴠᴏɪᴅ ᴀʙᴜsɪɴɢ ᴛʜɪs."
             )
         return
 
