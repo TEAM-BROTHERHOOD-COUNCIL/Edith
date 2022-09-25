@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import html
 from datetime import timedelta
@@ -31,16 +35,16 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Upda
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import mention_html
 
-import Exon.modules.sql.welcome_sql as sql
-from Exon import LOGGER, updater
-from Exon.modules.helper_funcs.anonymous import AdminPerms, user_admin
-from Exon.modules.helper_funcs.chat_status import (
+import Edith.modules.sql.welcome_sql as sql
+from Edith import LOGGER, updater
+from Edith.modules.helper_funcs.anonymous import AdminPerms, user_admin
+from Edith.modules.helper_funcs.chat_status import (
     bot_admin,
     connection_status,
     user_admin_no_reply,
 )
-from Exon.modules.helper_funcs.decorators import Exoncallback, Exoncmd
-from Exon.modules.log_channel import loggable
+from Edith.modules.helper_funcs.decorators import Edithcallback, Edithcmd
+from Edith.modules.log_channel import loggable
 
 j = updater.job_queue
 
@@ -62,7 +66,7 @@ def get_readable_time(time: int) -> str:
     return f"{t[0]} hour(s)" if time >= 3600 else f"{t[1]} minutes"
 
 
-@Exoncmd(command="raid", pass_args=True)
+@Edithcmd(command="raid", pass_args=True)
 @bot_admin
 @connection_status
 @loggable
@@ -163,7 +167,7 @@ def setRaid(update: Update, context: CallbackContext) -> Optional[str]:
             )
 
 
-@Exoncallback(pattern="enable_raid=")
+@Edithcallback(pattern="enable_raid=")
 @connection_status
 @user_admin_no_reply
 @loggable
@@ -202,7 +206,7 @@ def enable_raid_cb(update: Update, ctx: CallbackContext) -> Optional[str]:
     )
 
 
-@Exoncallback(pattern="disable_raid=")
+@Edithcallback(pattern="disable_raid=")
 @connection_status
 @user_admin_no_reply
 @loggable
@@ -228,7 +232,7 @@ def disable_raid_cb(update: Update, _: CallbackContext) -> Optional[str]:
     return logmsg
 
 
-@Exoncallback(pattern="cancel_raid=")
+@Edithcallback(pattern="cancel_raid=")
 @connection_status
 @user_admin_no_reply
 def disable_raid_cb(update: Update, _: CallbackContext):
@@ -240,7 +244,7 @@ def disable_raid_cb(update: Update, _: CallbackContext):
     )
 
 
-@Exoncmd(command="raidtime")
+@Edithcmd(command="raidtime")
 @connection_status
 @loggable
 @user_admin(AdminPerms.CAN_CHANGE_INFO)
@@ -285,7 +289,7 @@ def raidtime(update: Update, context: CallbackContext) -> Optional[str]:
         )
 
 
-@Exoncmd(command="raidactiontime", pass_args=True)
+@Edithcmd(command="raidactiontime", pass_args=True)
 @connection_status
 @user_admin(AdminPerms.CAN_CHANGE_INFO)
 @loggable
