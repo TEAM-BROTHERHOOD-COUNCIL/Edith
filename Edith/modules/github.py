@@ -29,13 +29,13 @@ SOFTWARE.
 import aiohttp
 from pyrogram import filters
 
-from Edith import pgram as abishnoi
+from Edith import pgram as hunter
 from Edith.utils.errors import capture_err
 
 __mod_name__ = "𝙶ɪᴛʜᴜʙ"
 
 
-@abishnoi.on_message(filters.command("git", "GitHub"))
+@hunter.on_message(filters.command("git", "GitHub"))
 @capture_err
 async def github(_, message):
     if len(message.command) != 2:
