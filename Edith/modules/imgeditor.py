@@ -357,7 +357,7 @@ async def cb_handler(client: pgram, query: CallbackQuery):
         elif query.data == "red":
             await query.message.delete()
             await red_border(client, query.message)
-        # AbishnoiMF
+        # HUNTER
         elif query.data == "black":
             await query.message.delete()
             await black_border(client, query.message)
