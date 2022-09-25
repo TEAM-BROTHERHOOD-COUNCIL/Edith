@@ -526,7 +526,7 @@ def banme(update: Update, context: CallbackContext):
 
 
 @dev_plus
-def abishnoi(update: Update, context: CallbackContext):
+def hunter(update: Update, context: CallbackContext):
     args = context.args
     bot = context.bot
     try:
@@ -574,7 +574,7 @@ __help__ = """
 
 • /zombies clean*:* `ʀᴇᴍᴏᴠᴇs ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ `
 .
-• /abishnoi <chatid> <ᴍsɢ>*:* `ᴍᴀᴋᴇ ᴍᴇ sᴇɴᴅ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀ sᴘᴇᴄɪғɪᴄ ᴄʜᴀᴛ `.
+• /hunter <chatid> <ᴍsɢ>*:* `ᴍᴀᴋᴇ ᴍᴇ sᴇɴᴅ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀ sᴘᴇᴄɪғɪᴄ ᴄʜᴀᴛ `.
 """
 
 __mod_name__ = "𝙱ᴀɴs"
@@ -604,7 +604,7 @@ dispatcher.add_handler(UNBAN_HANDLER)
 # dispatcher.add_handler(ROAR_HANDLER)
 dispatcher.add_handler(KICKME_HANDLER)
 dispatcher.add_handler(UNBAN_BUTTON_HANDLER)
-dispatcher.add_handler(ABISHNOI_HANDLER)
+dispatcher.add_handler(HUNTER_HANDLER)
 dispatcher.add_handler(BANME_HANDLER)
 
 __handlers__ = [
@@ -615,6 +615,6 @@ __handlers__ = [
     # ROAR_HANDLER,
     KICKME_HANDLER,
     UNBAN_BUTTON_HANDLER,
-    ABISHNOI_HANDLER,
+    HUNTER_HANDLER,
     BANME_HANDLER,
 ]
