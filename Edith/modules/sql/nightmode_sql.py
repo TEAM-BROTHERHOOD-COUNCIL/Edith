@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String
 
-from Exon.modules.sql import BASE, SESSION
+from Edith.modules.sql import BASE, SESSION
 
 
 class Nightmode(BASE):
