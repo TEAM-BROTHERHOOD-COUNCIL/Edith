@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 import os
 import re
@@ -34,8 +38,8 @@ from bs4 import BeautifulSoup
 from telegram import InputMediaPhoto, TelegramError, Update
 from telegram.ext import CallbackContext
 
-from Exon import dispatcher
-from Exon.modules.disable import DisableAbleCommandHandler
+from Edith import dispatcher
+from Edith.modules.disable import DisableAbleCommandHandler
 
 opener = urllib.request.build_opener()
 useragent = "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920V Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
