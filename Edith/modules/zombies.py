@@ -5,7 +5,7 @@ from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChannelParticipantsAdmins, ChatBannedRights
 
-from Exon import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, telethn
+from Edith import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, telethn
 
 BANNED_RIGHTS = ChatBannedRights(
     until_date=None,
