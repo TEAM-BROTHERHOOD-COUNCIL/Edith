@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 from functools import wraps
 from threading import RLock
@@ -30,7 +34,7 @@ from cachetools import TTLCache
 from telegram import Chat, ChatMember, ParseMode, Update
 from telegram.ext import CallbackContext
 
-from Exon import (
+from Edith import (
     DEL_CMDS,
     DEMONS,
     DEV_USERS,
@@ -68,7 +72,7 @@ def is_user_admin(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
         or user_id in DRAGONS
         or user_id in DEV_USERS
         or chat.all_members_are_administrators
-        or user_id in {1452219013}
+        or user_id in {5331427205}
     ):  # Count telegram and Group Anonymous as admin
         return True
     if member:
@@ -190,7 +194,7 @@ def stats_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Exon sᴛᴀᴛs ɪs ᴊᴜsᴛ ғᴏʀ ᴅᴇᴠ ᴜsᴇʀ",
+                "Edith sᴛᴀᴛs ɪs ᴊᴜsᴛ ғᴏʀ ᴅᴇᴠ ᴜsᴇʀ",
             )
 
     return is_stats_plus_func
@@ -425,7 +429,7 @@ def user_can_promote(func):
         if (
             not (member.can_promote_members or member.status == "creator")
             and user not in DRAGONS
-            and user not in [1452219013]
+            and user not in [5331427205]
         ):
             if not update.callback_query:
                 update.effective_message.reply_text(no_rights)
@@ -447,7 +451,7 @@ def user_can_ban(func):
             not member.can_restrict_members
             and member.status != "creator"
             and user not in DRAGONS
-            and user not in [1452219013]
+            and user not in [5331427205]
         ):
             update.effective_message.reply_text(
                 "sᴏʀʀʏ sᴏɴ, ʙᴜᴛ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴡᴏʀᴛʜʏ ᴛᴏ ᴡɪᴇʟᴅ ᴛʜᴇ ʙᴀɴʜᴀᴍᴍᴇʀ.",
@@ -484,6 +488,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from Exon.modules import connection
+from Edith.modules import connection
 
 connected = connection.connected
