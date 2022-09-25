@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 from typing import List, Optional, Union
 
@@ -32,12 +36,12 @@ from telegram.ext import (
 )
 from telegram.ext.filters import MessageFilter
 
-from Exon import LOGGER
-from Exon import dispatcher as d
-from Exon.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from Edith import LOGGER
+from Edith import dispatcher as d
+from Edith.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 
 
-class ExonHandler:
+class EdithHandler:
     def __init__(self, d):
         self._dispatcher = d
 
@@ -78,7 +82,7 @@ class ExonHandler:
                         group,
                     )
                 LOGGER.debug(
-                    f"[ᴇxᴏɴᴄᴍᴅ] ʟᴏᴀᴅᴇᴅ ʜᴀɴᴅʟᴇʀ {command} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__} ɪɴ ɢʀᴏᴜᴘ {group}"
+                    f"[ᴇdithᴄᴍᴅ] ʟᴏᴀᴅᴇᴅ ʜᴀɴᴅʟᴇʀ {command} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__} ɪɴ ɢʀᴏᴜᴘ {group}"
                 )
             except TypeError:
                 if can_disable:
@@ -134,7 +138,7 @@ class ExonHandler:
                         MessageHandler(pattern, func, run_async=run_async), group
                     )
                 LOGGER.debug(
-                    f"[ᴇxᴏɴᴍsɢ] Loaded filter pattern {pattern} for function {func.__name__} in group {group}"
+                    f"[ᴇdithᴍsɢ] Loaded filter pattern {pattern} for function {func.__name__} in group {group}"
                 )
             except TypeError:
                 if can_disable:
@@ -163,7 +167,7 @@ class ExonHandler:
                 )
             )
             LOGGER.debug(
-                f"[ᴇxᴏɴᴄᴀʟʟʙᴀᴄᴋ] ʟᴏᴀᴅᴇᴅ ᴄᴀʟʟʙᴀᴄᴋǫᴜᴇʀʏ ʜᴀɴᴅʟᴇʀ ᴡɪᴛʜ ᴘᴀᴛᴛᴇʀɴ {pattern} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__}"
+                f"[ᴇdithᴄᴀʟʟʙᴀᴄᴋ] ʟᴏᴀᴅᴇᴅ ᴄᴀʟʟʙᴀᴄᴋǫᴜᴇʀʏ ʜᴀɴᴅʟᴇʀ ᴡɪᴛʜ ᴘᴀᴛᴛᴇʀɴ {pattern} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__}"
             )
             return func
 
@@ -189,14 +193,14 @@ class ExonHandler:
                 )
             )
             LOGGER.debug(
-                f"[ᴇxᴏɴɪɴʟɪɴᴇ] ʟᴏᴀᴅᴇᴅ ɪɴʟɪɴᴇǫᴜᴇʀʏ ʜᴀɴᴅʟᴇʀ ᴡɪᴛʜ ᴘᴀᴛᴛᴇʀɴ {pattern} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__} | ᴘᴀssᴇs ᴜsᴇʀ ᴅᴀᴛᴀ: {pass_user_data} | ᴘᴀssᴇs ᴄʜᴀᴛ ᴅᴀᴛᴀ: {pass_chat_data} | ᴄʜᴀᴛ ᴛʏᴘᴇs: {chat_types}"
+                f"[ᴇdithɪɴʟɪɴᴇ] ʟᴏᴀᴅᴇᴅ ɪɴʟɪɴᴇǫᴜᴇʀʏ ʜᴀɴᴅʟᴇʀ ᴡɪᴛʜ ᴘᴀᴛᴛᴇʀɴ {pattern} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__} | ᴘᴀssᴇs ᴜsᴇʀ ᴅᴀᴛᴀ: {pass_user_data} | ᴘᴀssᴇs ᴄʜᴀᴛ ᴅᴀᴛᴀ: {pass_chat_data} | ᴄʜᴀᴛ ᴛʏᴘᴇs: {chat_types}"
             )
             return func
 
         return _inlinequery
 
 
-Exoncmd = ExonHandler(d).command
-Exonmsg = ExonHandler(d).message
-Exoncallback = ExonHandler(d).callbackquery
-Exoninline = ExonHandler(d).inlinequery
+Edithcmd = EdithHandler(d).command
+Edithmsg = EdithHandler(d).message
+Edithcallback = EdithHandler(d).callbackquery
+Edithinline = EdithHandler(d).inlinequery
