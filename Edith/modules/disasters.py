@@ -191,7 +191,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        message.reply_text("ᴛʜɪs ᴜsᴇʀ ɪs ᴀʟʀᴇᴀᴅʏ ᴀ ᴛʀᴜᴇ ᴇxᴏɴ")
+        message.reply_text("ᴛʜɪs ᴜsᴇʀ ɪs ᴀʟʀᴇᴀᴅʏ ᴀ ᴛʀᴜᴇ Wolve")
         return ""
 
     data["whitelists"].append(user_id)
@@ -245,7 +245,7 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "ᴛʜɪs ᴜsᴇʀ ɪs ᴀʟʀᴇᴀᴅʏ a ᴇxᴏɴ, ᴡᴇ ᴄᴀɴ ʙᴇ ᴄʟᴀssᴍᴀᴛᴇs ᴀs ᴡᴇʟʟ.."
+        rt += "ᴛʜɪs ᴜsᴇʀ ɪs ᴀʟʀᴇᴀᴅʏ a wolve, ᴡᴇ ᴄᴀɴ ʙᴇ ᴄʟᴀssᴍᴀᴛᴇs ᴀs ᴡᴇʟʟ.."
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
