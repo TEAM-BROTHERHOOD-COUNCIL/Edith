@@ -109,7 +109,7 @@ class EdithHandler:
                         )
                     )
                 LOGGER.debug(
-                    f"[ExonCMD] Loaded handler {command} for function {func.__name__}"
+                    f"[EdithCMD] Loaded handler {command} for function {func.__name__}"
                 )
 
             return func
