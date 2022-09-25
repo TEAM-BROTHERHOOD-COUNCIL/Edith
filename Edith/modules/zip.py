@@ -5,9 +5,9 @@ import zipfile
 from telethon import types
 from telethon.tl import functions
 
-from Exon import TEMP_DOWNLOAD_DIRECTORY
-from Exon import telethn as client
-from Exon.events import register
+from Edith import TEMP_DOWNLOAD_DIRECTORY
+from Edith import telethn as client
+from Edith.events import register
 
 
 async def is_register_admin(chat, user):
