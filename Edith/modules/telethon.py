@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
+Copyright (c) 2022 BROTHERHOOD COUNCIL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+# ""DEAR PRO PEOPLE,  IF YOU REMOVE & CHANGE THIS LINE KINDLY INFORM US AT @TBH_COUNCIL_SUPPORT
+# TG :- @THE_BROTHERHOOD_COUNCIL
+#     MY ALL BOTS :- BROTHERHOOD_BOTS
+#     GITHUB :- THE-BROTHERHOOD-COUNCIL ""
 
 
 import io
@@ -29,13 +33,13 @@ import traceback
 
 from telethon.sync import events
 
-from Exon import telethn as client
+from Edith import telethn as client
 
 # telethon eval
 
 
 @client.on(
-    events.NewMessage(from_users=[1452219013], pattern="^/te ?(.*)")
+    events.NewMessage(from_users=[5331427205], pattern="^/te ?(.*)")
 )  # add owner/dev id here
 async def eval(event):
     if event.fwd_from:
