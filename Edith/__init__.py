@@ -34,7 +34,6 @@ import time
 
 import httpx
 import pymongo
-import spamwatch
 import telegram.ext as tg
 from aiohttp import ClientSession
 from motor import motor_asyncio
@@ -255,8 +254,6 @@ else:
     REDIS_URL = Config.REDIS_URL
     SUPPORT_CHAT = Config.SUPPORT_CHAT
     UPDATES_CHANNEL = Config.UPDATES_CHANNEL
-    SPAMWATCH_SUPPORT_CHAT = Config.SPAMWATCH_SUPPORT_CHAT
-    SPAMWATCH_API = Config.SPAMWATCH_API
     REM_BG_API_KEY = Config.REM_BG_API_KEY
     OPENWEATHERMAP_ID = Config.OPENWEATHERMAP_ID
     APP_ID = Config.APP_ID
