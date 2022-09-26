@@ -66,8 +66,6 @@ class Config(object):
     WEBHOOK = False
     INFOPIC = True
     URL = None
-    SPAMWATCH_API = ""
-    SPAMWATCH_SUPPORT_CHAT = "@TEAM_BLACK_SUPPORT"
 
     REDIS_URL = ""
 
