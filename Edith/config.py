@@ -92,7 +92,6 @@ class Config(object):
     AI_API_KEY = "HATEYOU"
     BL_CHATS = []
     SPAMMERS = None
-    SPAMWATCH_API = ""
     ALLOW_CHATS = None
     TEMP_DOWNLOAD_DIRECTORY = "./"
     HEROKU_APP_NAME = ""
